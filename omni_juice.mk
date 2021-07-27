@@ -24,6 +24,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from citrus
 $(call inherit-product, device/poco/juice/device.mk)
 
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := juice
 PRODUCT_NAME := omni_juice
